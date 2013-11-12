@@ -1,15 +1,15 @@
 <?php
 /*
-Plugin Name: TODO
-Plugin URI: TODO
-Description: TODO
-Version: 1.0
-Author: TODO
-Author URI: TODO
-Author Email: TODO
-Text Domain: widget-name-locale
+Plugin Name: WP-No-Password
+Plugin URI: http://fueledbydreams.com
+Description: This plugin creates a widget that allows specified user roles to lo in to the WordPress blog without using a password.
+Version: 0.9
+Author: J. Isaac Friend and James W. Lane
+Author URI: http://jisaacfriend.com http://jameswlane.com http://fueledbydreams.com
+Author Email: info@fueledbydreams.com
+Text Domain: wp-no-password-locale
 Domain Path: /lang/
-Network: false
+Network: true
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
