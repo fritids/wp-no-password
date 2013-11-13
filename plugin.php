@@ -149,7 +149,9 @@ class wp_no_password extends WP_Widget {
 	 * @param		boolean	$network_wide	True if WPMU superadmin uses "Network Activate" action, false if WPMU is disabled or plugin is activated on an individual blog.
 	 */
 	public function activate( $network_wide ) {
-		// TODO define activation functionality here
+		
+		add_action( 'tgmpa_register', 'wp_no_password_required_plugins' );
+
 	} // end activate
 
 	/**
