@@ -1,15 +1,15 @@
 <?php
 /*
-Plugin Name: WP-No-Password
+Plugin Name: WP No Password
 Plugin URI: http://fueledbydreams.com
-Description: This plugin creates a widget that allows specified user roles to lo in to the WordPress blog without using a password.
+Description: This plugin creates a widget that allows specified user roles to log in to the WordPress blog without using a password.
 Version: 0.9
-Author: J. Isaac Friend and James W. Lane
-Author URI: http://jisaacfriend.com http://jameswlane.com http://fueledbydreams.com
+Author: J. Isaac Friend (a Goddamn genius) and James W. Lane
+Author URI: http://fueledbydreams.com
 Author Email: info@fueledbydreams.com
 Text Domain: wp-no-password-locale
 Domain Path: /lang/
-Network: true
+Network: false
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,7 +66,7 @@ class wp_no_password extends WP_Widget {
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_widget_scripts' ) );
 
 		// Require the TGM Plugin Activator
-		require_once dirname( __FILE__ ) . 'classes/class-tgm-plugin-activation.php';
+		require_once( plugin_dir_path( __FILE__ ) . 'classes/class-tgm-plugin-activation.php' );
 
 	} // end constructor
 
@@ -218,7 +218,7 @@ class wp_no_password extends WP_Widget {
 			),
 		);
 
-		$theme_text_domain = 'wp-no-password-locale'
+		$theme_text_domain = 'wp-no-password-locale';
 
 		$config = array(
 			'domain'					=> $theme_text_domain,
